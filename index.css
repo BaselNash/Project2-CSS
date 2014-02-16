@@ -16,30 +16,32 @@ body {
 	background-color: transparent;
 	margin: auto;
 	alignment-adjust:central;
-	background-image: url(images/Tiger-drawing.jpg)
+	background-image: url(images/Tiger-drawing.jpg);
 }
 
 .header{
 	height:200px;
-	background-color: #999;
-	background-image: url(images/HeaderD1.jpg)
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #666
 }
 
+
 .mainContent{
-	width:845px;
+	width:1680px;
 	height:840px;
+	margin:auto;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .sideBar1{
-	width:845px;
+	width:430px;
 	height:840px;
-	background-color: #999;
-	};
+	background-color: rgba(0, 0, 0, 0.3);
+	}
 
 .footer{
 	height:200px;
-	background-color: #999;
-	background-image: url(images/FooterD1.jpg);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 a:link {
@@ -62,3 +64,9 @@ a:active {
 	color: #0CC;
 }
 
+.arien {
+	
+	color: #0FF;
+	
+	
+}
