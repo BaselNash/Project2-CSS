@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {padding:0; margin: 0;}
+.dropdown{float:left;}
+.dropdown dt {width:281px; height:22px; padding:14px; font-weight:bold; cursor:pointer; text-align:center; color:#FFF; background-color:rgba(0,0,0,0.1);}
+.dropdown dd {position:absolute; z-index:1; overflow:hidden; height:140; width:309px; display:none; margin:auto;}
+.dropdown ul {width:216px; list-style:none; border-top:none;}
+.dropdown li {display:inline;}
+.dropdown a, .dropdown a:active, .dropdown a:visited .dropdown a:link{display:block; padding:20px; color:#FFF; background-color: rgba(0,0,0,0.6); width:270px; text-align:center; text-decoration:none;}
+.dropdown a:hover {background: rgba(0,0,0,0.2) ; color:#FFF;}
+.dropdown dt:hover {background: rgba(0,0,0,0.2)}
+
+/*Changing to white*/
+
+* {padding:0; margin: 0;}
+.dropdown2{float:left;}
+.dropdown2 dt {width:281px; height:22px; padding:14px; font-weight:bold; cursor:pointer; text-align:center; color:#000; background-color:rgba(244,244,244,0.1);}
+.dropdown2 dd {position: relative; z-index:1; overflow:hidden; height:140; width:309px; display:none; margin:auto;}
+.dropdown2 ul {width:216px; list-style:none; border-top:none;}
+.dropdown2 li {display:inline;}
+.dropdown2 a, .dropdown2 a:active, .dropdown2 a:visited .dropdown2 a:link{display:block; padding:20px; color:#000; background-color: rgba(200,200,200,0.2); width:270px; text-align:center; text-decoration:none;}
+.dropdown2 a:hover {background: rgba(0,0,0,0.1) ; color: #000;}
+.dropdown2 dt:hover {background: rgba(244,244,244,0.6)}
