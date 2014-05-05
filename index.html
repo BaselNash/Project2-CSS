@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="index.css">
+<title>Home Page</title>
+
+<link rel="stylesheet" type="text/css" href="dropdown.css">
+
+<script src="js/dropdown.js" type="text/javascript"></script>
+
+<!-- SLide show code 
+I did not write this code, all credits and work go to the programmer. Reference for this code is http://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+
+$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+			
+		});
+
+</script>
+
+<script>
+
+	function changeMyColors(bgcolor, color, className, blockColor){
+		
+		document.getElementById("Body").style.backgroundColor = bgcolor;
+		document.getElementById("Body").style.color = color;
+		document.getElementById("block1").style.backgroundColor = blockColor;
+		document.getElementById("block2").style.backgroundColor = blockColor;
+		
+		document.getElementById("dropDown").className = className;
+		document.getElementById("dropDown2").className = className;
+		document.getElementById("dropDown3").className = className;
+		document.getElementById("dropDown4").className = className;
+		//document.getElementById("one-ddheader").style.color = color;
+		}
+
+</script>
+</head>
+
+<body>
+
+<div id = "Body" class="Mastercontainer">
+    
+    	<div class="header">
+        
+        	<div class="whiteScreen" 
+            	onClick="changeMyColors('rgba(244,244,244,0.6)','black','dropdown2','rgba(0,0,222,0.3)')"></div>
+            <div class="blackScreen" 
+            	onClick="changeMyColors('rgba(0,0,0,0.6)','white','dropdown','rgba(222,0,0,0.3)')"></div>
+        
+        </div>
+        
+        <div class="nav">
+        
+        <div id = "block2" class="block"></div>
+        
+        <dl id = "dropDown" class="dropdown">
+		  <dt id="one-ddheader" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">About</dt>
+		  <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+					<ul>
+    
+    					<li><a id ="a1" href = "Page1.html"></a></li>
+                        
+    				</ul>
+  				</dd>
+		  </dl>
+          
+          <!-- New DropDown -->
+          
+          <dl id = "dropDown2" class="dropdown">
+		  <dt id="two-ddheader" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Course Work</dt>
+		  <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
+					<ul>
+    
+    					<li><a id ="a1" href = "Page1.html"></a></li>
+                        
+    				</ul>
+  				</dd>
+		  </dl>
+          
+          <!-- New DropDown -->
+
+          <dl id = "dropDown3" class="dropdown">
+		  <dt id="three-ddheader" onmouseover="ddMenu('three',1)" onmouseout="ddMenu('three',-1)">Freelancing</dt>
+		  <dd id="three-ddcontent" onmouseover="cancelHide('three')" onmouseout="ddMenu('three',-1)">
+					<ul>
+    
+    					<li><a id ="a1" href = "Page1.html">Creator</a></li>
+       					<li><a id ="a2" href = "History.html">Historcal Use</a></li>
+                        <li><a id ="a3" href = "Classification.html">Classification</a></li>
+                        
+    				</ul>
+  				</dd>
+		  </dl>
+          
+          <!-- New DropDown -->
+          
+          <dl id = "dropDown4" class="dropdown">
+		  <dt id="four-ddheader" onmouseover="ddMenu('four',1)" onmouseout="ddMenu('four',-1)">Web Design</dt>
+		  <dd id="four-ddcontent" onmouseover="cancelHide('four')" onmouseout="ddMenu('four',-1)">
+					<ul>
+    
+    					<li><a id ="a1" href = "Page1.html">Creator</a></li>
+       					<li><a id ="a2" href = "History.html">Historcal Use</a></li>
+                        <li><a id ="a3" href = "Classification.html">Classification</a></li>
+                        
+    				</ul>
+  				</dd>
+		  </dl>
+          
+          <div id = "block1" class="block"></div>
+        
+        </div>
+        
+        <div class="mainContent">
+        
+        	<div id="slideshow">
+            
+            <div style="background-color:#000"></div>
+            <div style="background-color:#333"></div>
+            <div style="background-color:#666"></div>
+            <div style="background-color:#999"></div>
+            
+            </div>
+        
+        </div>
+        
+        
+</div>
+</body>
+</html>
